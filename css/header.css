@@ -1,0 +1,23 @@
+header h1 {
+    font-size: 50px;
+    font-weight: 400;
+} 
+
+header h6 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 15px;
+    text-align: right;
+    margin-top: -20px;
+}
+
+#mobileMenuBtn {
+    width: 40px; 
+    height: 40px;
+}
+
+.ew {
+    width: 100%; 
+    height: auto; 
+    max-width: 500px;
+}

@@ -1,0 +1,18 @@
+h2 {
+    font-size: 35px;
+    margin: 3vh 0 4vh 0;
+}
+
+p, li{
+    font-size: 110%;
+    text-align: justify;
+}
+
+li {
+    margin-bottom: 1vh;
+}
+
+.accordion-button {
+    font-size: 30px;
+}
+

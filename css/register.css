@@ -1,0 +1,36 @@
+h2 {
+    font-size: 35px;
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+    max-width: 600px;
+}
+
+#registerBtn {
+    max-width: 430px;
+    width: 100%;
+    margin: 0 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Amaranth", sans-serif;
+    color: #000;
+    font-size: 20px;
+    border: solid black 2px;
+}
+
+#registerBtn:hover {
+    background-color: var(--button-hover)
+}
+
+h6 {
+    font-size: 120%;
+    margin: 15px 5px;
+}
+
+#cancelationPolicy {
+    margin: 5vh auto 10vh auto;
+}

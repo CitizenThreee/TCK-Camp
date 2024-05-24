@@ -1,0 +1,40 @@
+section {
+    max-width: 600px;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+#contactInfo div {
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+    font-family: "Amaranth", sans-serif;
+}
+
+form {
+    max-width: 700px;
+}
+
+label, button {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Amaranth", sans-serif;
+}
+
+button {
+    padding: 10px;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
+}

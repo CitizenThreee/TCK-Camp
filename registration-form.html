@@ -1,0 +1,257 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form | TCK</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/positioning.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/registration-form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<script src="logic/ui.js"></script>
+<script src="logic/registration.js"></script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+<body>
+    <header id="registrationNavbar" class="p-3 bg-2 d-flex justify-content-between align-items-center">
+        <div>
+            <h1>TCK CAMP</h1>
+            <h6>Register</h6>
+        </div>
+
+        <div id="desktopMenu" class="menu">
+            <a href="./index.html">home</a>
+            <a href="./info.html">info</a>
+            <a href="./contact.html">contact</a>
+            <a href="./register.html" class="active">register</a>
+        </div>
+    </header>
+
+    <div id="closeRegistrationContainer" class="d-flex justify-content-end mx-auto">   
+        <button id="closeRegistrationBtn" onclick="closeRegistration('register.html')">
+            <iconify-icon icon="mingcute:close-line" width="40px" height="40px" id="closeRegistrationIcon"></iconify-icon>
+        </button>
+    </div>
+    
+    <section id="registrationDetails" class="p-2 mx-auto">
+        <h6>Camper Registration Details</h6>
+        <p>
+            Campers under 18 must have their parents/guardians' permission to register. 
+            All information you provide is kept private, is not shared with any outside/third-party 
+            organizations, and is used for the purposes of registration. If you have any privacy 
+            concerns, please e-mail us for a paper registration form.
+        </p>
+    </section>
+
+    <section id="registrationForm" class="d-flex flex-column align-items-center p-2">
+        <div class="form-field my-2 d-flex justify-content-between">
+            <label for="registration-type">registration type</label>
+            <select name="registration-type" id="registration-type">
+                <option value="standard" selected>Standard Camper</option>
+                <option value="sibling">Additional Sibling</option>
+            </select>
+        </div>
+        
+        <div class="form-field my-2">
+            <label for="first-name">first name*</label>
+            <p>Camper's first name</p>
+            <input type="text" id="first-name" placeholder="first name" required>
+        </div>
+
+        <div class="form-field my-2">
+            <label for="last-name">last name*</label>
+            <p>Camper's last name</p>
+            <input type="text" id="last-name" placeholder="last name" required>
+        </div>
+
+        <div class="form-field my-2">
+            <label for="email">email*</label>
+            <p>Camper or parent/guardian contact email address</p>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="form-field my-2">
+            <label for="phone">phone*</label>
+            <p>Camper or parent/guardian contact phone number</p>
+            <input type="text" id="phone" placeholder="02100000000" required>
+        </div>
+
+        <div class="form-field my-2">
+            <label>date of birth*</label>
+            <p>mm-dd-yyyy</p>
+            <div class="d-flex gap-3">
+                <input type="number" id="day" placeholder="dd" required>
+                <input type="number" id="month" placeholder="mm" required>
+                <input type="number" id="year" placeholder="yyyy" required>
+            </div>
+        </div>
+
+        <div class="form-field my-2">
+            <label for="address">address*</label>
+            <p>Camper or parent/guardian contact address</p>
+            <input type="text" id="address" placeholder="123 example street" required>
+            <label for="city">city</label>
+            <input type="text" id="city" placeholder="gordonton" required>
+            <label for="state">state/province</label>
+            <input type="text" id="state" placeholder="waikato" required>
+            <label for="zip">zip/postal code</label>
+            <input type="number" id="zip" placeholder="3790">
+            <label for="country">country</label>
+            <input type="text" id="country" placeholder="new zealand" required><hr>
+        </div>
+
+        <div class="form-field my-2">
+            <label for="address">allergies*</label>
+            <p>does the camper have any allergies? There are qualified nurses at camp who can assist with regular medication, and we are able to assist with most dietary requirements</p>
+            <div class="radioBtn">
+                <input type="radio" name="allergies" id="allergiesYes" value="yes" required>
+                <label for="allergiesYes" class="me-3 mb-2">yes</label>
+                <input type="radio" name="allergies" id="allergiesNo" value="no" required>
+                <label for="allergiesNo">no</label>
+            </div>
+            <p>if you answered yes to the above, please explain in more detail</p>
+            <label for="allergyDetails">allergy details</label>
+            <input type="text" id="allergyDetails" placeholder="gluten-free, allergic to peanuts, etc."><hr>
+        </div>
+
+        <div class="form-field my-2">
+            <label>emergency contact 1*</label>
+            <p>please provide 2 emergency contacts</p>
+            <label for="e1FirstName">first name</label>
+            <input type="text" id="e1FirstName" placeholder="first name">
+            <label for="e1LastName">last name</label>
+            <input type="text" id="e1LastName" placeholder="last name">
+            <label for="e1ContactNumber">phone</label>
+            <input type="number" id="e1ContactNumber" placeholder="02100000000">
+            <label>emergency contact 2*</label><br>
+            <label for="e2FirstName">first name</label>
+            <input type="text" id="e2FirstName" placeholder="first name">
+            <label for="e2LastName">last name</label>
+            <input type="text" id="e2LastName" placeholder="last name">
+            <label for="e2ContactNumber">phone</label>
+            <input type="number" id="e2ContactNumber" placeholder="02100000000"><hr>
+        </div>
+
+        <div class="form-field my-2">
+            <label>about the camper</label>
+            <p>
+                All of the following fields are entirely optional - they help us structure 
+                camp sessions and games, but you do not have to provide this information 
+                if you have privacy concerns. We do not share your information to third-party 
+                organisations, but it is subject to Squarespace's terms and conditions.
+            </p>
+            <label for="placesLivedOverseas">places lived overseas</label>
+            <textarea name="placesLivedOverseas" id="placesLivedOverseas" placeholder="where have you lived?"></textarea>
+            <label for="affiliatedOrgs">affiliated associations/organisations</label>
+            <textarea name="affiliatedOrgs" id="affiliatedOrgs" placeholder="are you affiliated with any organisations or associations?"></textarea>
+            <label for="nextYearPlans">2025 plans in brief</label>
+            <textarea name="nextYearPlans" id="nextYearPlans" placeholder="are you studying? gap year? working? something else?"></textarea>
+        </div>
+
+        <div class="form-field my-2">
+            <label>camp information and disclaimers</label>
+            <p>
+                Please read each of the following carefully - they contain important details about camp. 
+                Screenshot or write down this information, although it will also be provided via e-mail 
+                closer to the camp start date.
+            </p> 
+            <label for="campLunch">camp lunch*</label>
+            <p>
+                Parents are invited to join us for lunch at 12:30pm on Saturday, 22nd January 2022 at 
+                Eastwest College before campers head home. We hope that the event gives a chance for parents 
+                to meet the parents of other TCKs, some of the campers, and camp leaders over a free meal. 
+                Please indicate below if you would like to join us. If you're unsure as of yet, indicate as 
+                such for now and let us know by e-mail whenever you can.
+            </p>
+            <div class="radioBtn d-flex flex-column">
+                <div class="d-flex align-items-center">
+                    <input type="radio" name="cl" id="clAlreadyIndicated" value="clAlreadyIndicated">
+                    <label for="clAlreadyIndicated" class="smallLabel ms-2 pb-2"">my parents already indicated they are coming on a registration form of another camper</label>
+                </div>
+                <div class="d-flex align-items-center">
+                    <input type="radio" name="cl" id="clBoth" value="clBoth">
+                    <label for="clBoth" class="smallLabel ms-2 pb-2"">both my parents are able to join and will be there</label>
+                </div>
+                <div class="d-flex align-items-center">
+                    <input type="radio" name="cl" id="clOne" value="clOne">
+                    <label for="clOne" class="smallLabel ms-2 pb-2"">one of my parents is able to join and will be there</label>
+                </div>
+                <div class="d-flex align-items-center">
+                    <input type="radio" name="cl" id="clNone" value="clNone">
+                    <label for="clNone" class="smallLabel ms-2 pb-2"">my parent's won't be joining</label>
+                </div>
+                <div class="d-flex align-items-center">
+                    <input type="radio" name="cl" id="clUnsure" value="clUnsure">
+                    <label for="clUnsure" class="smallLabel ms-2 pb-2">unsure at the moment</label>
+                </div>
+            </div>
+
+            <label>camp dates and times*</label>
+            <p>
+                TCK Camp 2025 will commence at 2pm on Tuesday, 18th January 2025, and will continue 
+                until after lunch on Saturday, 22nd January 2025.
+            </p>
+            <div class="radioBtn d-flex flex-column">
+                <div class="d-flex align-items-center">
+                    <input type="radio" name="cTime" id="cTime" value="yes">
+                    <label for="cTime" class="smallLabel ms-2 pb-2"">I have read and understand the above</label>
+                </div>
+            </div>
+
+            <label>what to bring*</label>
+            <p>
+                Campers must bring their own bedding (sheets/sleeping bag/pillows; mattresses are provided), 
+                towels, toiletries, and enough clothing for five days as well as some old clothing for messy 
+                games. We also ask that campers bring a Bible, a notebook, and a pen. We love board games, 
+                so if you have any you're willing to bring with you, please mark your name on them and pack 
+                them in your bag. The camp will include a beach trip, so you should also bring swimwear and 
+                a beach towel. Please note that while Eastwest College is a safe environment, we do not accept 
+                responsibility for lost/damaged property, so please make sure that especially if expensive items 
+                are brought to camp they are well looked-after and ideally insured.
+            </p>
+            <div class="radioBtn d-flex flex-column">
+                <div class="d-flex align-items-center">
+                    <input type="radio" name="whatToBring" id="whatToBring" value="yes">
+                    <label for="whatToBring" class="smallLabel ms-2 pb-2"">I have read and accept all of the above</label>
+                </div>
+            </div>
+
+            <label>registration fees*</label>
+            <p>
+                Registration costs are indicated on this website. If registering one camper, please select 'standard'. 
+                Any additional siblings from the same family receive a discounted rate. If registering three siblings, 
+                for example, please pay one standard registration + two additional sibling registrations. If you have 
+                any concerns, please get in touch by e-mail for a paper registration form and pay by direct credit.
+            </p>
+            <div class="radioBtn d-flex flex-column">
+                <div class="d-flex align-items-center">
+                    <input type="radio" name="registrationFees" id="registrationFees" value="yes">
+                    <label for="registrationFees" class="smallLabel ms-2 pb-2"">I have read and accept all of the above</label>
+                </div>
+            </div><hr>
+        </div>
+
+        <div class="form-field my-2">
+            <label for="sign">please sign*</label>
+            <p>
+                Please write your full name and today's date in the box below. This will act as your digital signature. 
+                In doing so, you accept that you have read and agreed to all information in the above section, and that 
+                all information you have provided is true and accurate. If you are under 18, please have your 
+                parent/guardian sign
+            </p>
+            <input type="text" placeholder="fname lname dd/mm/yyyy" id="sign" class="my-2">
+        </div>
+        
+        <button id="registerBtn" class="bg-b" onclick="confirmRegistration()">confirm registration</button>
+    </section>
+</body>
+</html>

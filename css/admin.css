@@ -1,0 +1,50 @@
+#loginFrame {
+    margin-top: 10vh;
+}
+
+.in-box {
+    max-width: 400px;
+    width: 100%;
+}
+
+label, button {
+    font-family: "Amaranth", sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px;
+}
+
+#loginBtn {
+    max-width: 400px;
+    width: 80%;
+}
+
+select {
+    border: none;
+    font-family: "Amaranth", sans-serif;
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+
+#camperSearch {
+    border: none;
+}
+
+.max-width {
+    width: 100%;
+    max-width: 900px;
+}
+
+.camperCard {
+    width: 100%;
+    max-width: 900px;
+}
+
+.viewContainer {
+    height: 60px;
+    overflow: hidden;
+}   

@@ -1,0 +1,43 @@
+#mobileMenu {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 5vh;
+}
+
+#desktopMenu a {
+    margin-right: 2vw;
+    font-size: 25px;
+}
+
+.menu a {
+    font-size: 35px;
+    text-decoration: none;
+    margin: 1vh;
+    color: #000;
+    font-family: "Amaranth", sans-serif;
+}
+
+.menu a.active {
+    color: #525252;
+}
+
+.menu a:hover {
+    color: #9c7754;
+}
+
+#mobileMenuBtn {
+    display: none;
+    background-color: #0000;
+    border: none;
+}
+
+@media screen and (max-width: 780px) {
+    #desktopMenu {
+        display: none;
+    }
+
+    #mobileMenuBtn {
+        display: inline;
+    }
+}

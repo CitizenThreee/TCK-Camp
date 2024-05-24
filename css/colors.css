@@ -1,0 +1,4 @@
+.bg-1 { background-color: var(--primary-background); }
+.bg-2 { background-color: var(--secondary-background); }
+.bg-m { background-color: var(--menu-background); }
+.bg-b { background-color: var(--button-background);}

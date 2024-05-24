@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info | TCK</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/positioning.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/info.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<script src="logic/ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+<body>
+    <header class="p-3 bg-2 d-flex justify-content-between align-items-center">
+        <div class="mx-3">
+            <h1>TCK CAMP</h1>
+            <h6>Info</h6>
+        </div>
+        
+        <button id="mobileMenuBtn" onclick="toggleMobileMenu()">
+            <iconify-icon icon="line-md:close-to-menu-transition" width="40px" height="40px" id="mobileMenuIcon"></iconify-icon>
+        </button>
+
+        <div id="desktopMenu" class="menu">
+            <a href="./index.html">home</a>
+            <a href="./info.html" class="active">info</a>
+            <a href="./contact.html">contact</a>
+            <a href="./register.html">register</a>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="menu d-none flex-column align-items-center bg-m">
+        <a href="./index.html">home</a>
+        <a href="./info.html" class="active">info</a>
+        <a href="./contact.html">contact</a>
+        <a href="./register.html">register</a>
+    </div>
+
+    <section class="p-3 d-flex flex-column" title="TCK Camp 2025">
+        <h2>TCK Camp 2025</h2>
+        <p>
+            2025 will mark the tenth year in a row that we have hosted third culture kids from all over 
+            Aotearoa and the world for a camp that is all about special people just like you! We think this 
+            kaupapa is the bees knees, and apparently so do our campers! We’ve been a fast-growing community 
+            since camp began in 2016, and it has been an incredible blessing to get to walk with you and 
+            prepare each group of young people for what lies ahead - whether you are returning overseas or 
+            are settling in New Zealand long-term, with your family or on your own - and to help you settle 
+            into life as weird people living in a pretty weird world! 
+            <br><br>
+            Our prayer is that every third culture kid will act justly, love mercy, and walk humbly with God 
+            through whatever doors you may encounter. We could write all day about this, but we’ll give you a 
+            snapshot of what camp looks like down below. If you’re still a bit iffy about registering for camp 
+            (or your teen if you’re a parent/guardian), the best way to find out some more is to flick us a 
+            message over on the <a href="contact.html">contact page,</a>
+            <br><br>
+            Ka kite anō, see you soon!
+            <br><br>
+            -TCK Camp Leadership Team
+        </p>
+    </section>
+
+    <div class="accordion accordion-flush px-2 mb-4 px-md-5" id="infoAccordion">
+        <section class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Who?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+              <div class="accordion-body bg-light">
+                <p>
+                    One of the most important things about TCK Camp is you! So, who is ‘you’? A TCK (third culture kid) 
+                    is generally someone who has spent (part of) their childhood living in a country and culture outside 
+                    of their own birth country, eventually blending the cultures of both places into a new ‘third culture’ 
+                    that is neither fully home nor away. In fact, what is ‘home’ and what is ‘away’ may likely be a difficult 
+                    concept for you. We're looking for those TCKs entering New Zealand school year 10 (aged 14/15ish) and 
+                    above to join us. If after reading this, you're still not sure if you (or your child) fits the bill, 
+                    just <a href="mailto:hello@tckcamp.com">flick us an e-mail</a> and we can help you out!
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <section class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                    When?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+              <div class="accordion-body bg-light">
+                <p>
+                    Camp sign-in opens from 2pm on Tuesday, the 18th of January, and will last until 2pm on Saturday, 
+                    the 22nd of January. If you are a parent and you'd like to stay for the parents’ lunch on Saturday 
+                    when you come to pick up your young people, you are more than welcome to do so! Just let us know on the 
+                    registration form. This lunch was a fantastic time last year, and we were very excited to see so many third 
+                    culture parents connect with each other over some great kai!
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <section class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                    Where?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+              <div class="accordion-body bg-light">
+                <p>
+                    Eastwest College of Intercultural Studies is the host of TCK Camp, and camp takes place on its campus in 
+                    the lusciously green Gordonton, just outside of Hamilton, Waikato (you can <a href="https://maps.app.goo.gl/k1p1V2jBTLyKBGAp9" target="_blank">find it here</a>). 
+                    If you (or your child) might need a hand to get to Eastwest, <a href="mailto:hello@tckcamp.com">let us know</a>; 
+                    we have people traveling in from all over the country who may be able to help you out with a ride. Camp takes 
+                    place during Eastwest's summer break, so there are vacant student housing units in which the campers are 
+                    accommodated along with one of their leaders. These are pretty flash for a summer camp - plenty of hot 
+                    showers and comfy mattresses for all!
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <section class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                    What?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+              <div class="accordion-body bg-light">
+                <p>
+                    The two main focuses of camp are first worshipping God together in all of our uniqueness; and second, 
+                    building a strong TCK community here in Aotearoa. We have a diverse leadership team (who are themselves TCKs) 
+                    to help facilitate this, but what we've experienced in the past is that most campers do an amazing job 
+                    of including each other and looking out for one another already. We have brilliant guest speakers come 
+                    and run seminars and smaller break-out sessions with us that help you better understand the things you 
+                    might be facing upon returning to Aotearoa, help you realize that you aren't so alone in feeling the way 
+                    that you do, and give you some very practical ways to deal with those feelings and experiences. We worship 
+                    together in a way that is so unique to TCKs, and each year our worship team is made up of amazing young 
+                    people who just come with a voice or an instrument and jump right on in. 
+                    <br><br>
+                    We run games and activities (like bonfire night, movie night, and beach trip day, plus way more!) to 
+                    engage you with those around you and enjoy your summer, and we still make sure there is plenty of free time 
+                    on campus to get to know some incredible people. The food is not at all bad either, and there's plenty of it! 
+                    Delicious breakfasts, lunches, and dinners are provided, as well as other snacks throughout the day; we try 
+                    our best to accommodate your special dietary requirements, too, so let us know on the registration form if 
+                    you have any of those.
+                </p>
+              </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="p-3 d-flex flex-column" title="Who">
+        <h2>You'll need to bring:</h2>
+        <p>
+            If you've read through all of this and still have some unanswered questions for us, head over to the contact 
+            page and fill out the contact form, or fire an e-mail at us. We look forward to seeing you in January! Kia tau 
+            te rangimarie
+        </p>
+
+        <ul>
+            <li>Plenty of clothes to last five days, including some that can potentially get dirty, and something that you can swim in</li>
+            <li>Towels (shower and beach) and toiletries (think toothbrush + toothpaste, deodorant, shampoo + conditioner, soap)</li>
+            <li>Something to sleep in, like a sleeping bag or a duvet, and a pillow or two</li>
+            <li>If you like board/card games, you'll love camp! Feel free to bring some along, but make sure you note down somewhere on them that they belong to you</li>
+            <li>A Bible, and something to take notes with; phones are fine, but can serve to be a distraction at times so it's best to bring a notepad/notebook + a pen instead</li>
+            <li>Your very honest self</li>
+            <li>Something that makes you, you! If you're into art, bring your artsy stuff along! Music? Bring an instrument! Photography? A camera! You get the picture.</li>
+        </ul>
+
+        <p>
+            Just a quick note: anything that you do bring along we cannot be liable for if anything happens to it. So if 
+            you bring something (especially something expensive like a camera), you've gotta be prepared to look out for 
+            it throughout camp.
+        </p>
+    </section>
+    
+    <footer class="d-flex flex-column align-items-center bg-2 px-3 py-3">
+        <img src="media/eastwest-logo.png" alt="Eastwest college of intercultural studies" class="ew mb-4 rounded-2">
+        <p>Eastwest College of Intercultural Studies © 2021</p>
+        <a href="mailto:hello@tckcamp.com">hello@tckcamp.com</a>
+    </footer>
+</body>
+</html>
