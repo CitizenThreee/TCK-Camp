@@ -1,6 +1,6 @@
 <html lang="en">
 <template id="camperTemplate">
-    <div class="viewContainer bg-1">
+    <div class="viewContainer bg-1 px-3 pt-2">
         <div class="d-flex justify-content-between">
             <h5 class="name">Aedan Beisly</h5>
             <h5 class="email">albeisly@gmail.com</h5>
@@ -65,17 +65,17 @@
     <div class="d-flex flex-column align-items-center my-4">
         <div class="d-flex align-items-center">
             <h2>Camp Year</h2>
-            <select name="year" id="year">
+            <select name="year" id="year" onchange="filterByYear(this.value)">
                 <option value="2025" selected>2025</option>
-                <option value="2024" selected>2024</option>
-                <option value="2023" selected>2023</option>
-                <option value="2022" selected>2022</option>
-                <option value="2021" selected>2021</option>
-                <option value="2020" selected>2020</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
             </select>
         </div>
     
-        <div class="mx-3 max-width">
+        <div class="px-2 max-width">
             <div class="d-flex align-items-center justify-content-between">
                 <h5>Camp Theme</h5>
                 <div class="d-flex align-items-center">
@@ -99,7 +99,7 @@
             </div><hr>
         </div>
     
-        <div class="m-3 max-width ">
+        <div class="p-3 max-width ">
             <div class="d-flex align-items-center justify-content-between">
                 <h2>Campers</h2>
                 <input type="text" placeholder="search campers" id="camperSearch" class="bg-b rounded-pill px-3">
