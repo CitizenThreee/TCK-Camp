@@ -45,6 +45,11 @@ select {
 }
 
 .viewContainer {
-    height: 60px;
+    height: 80px;
     overflow: hidden;
 }   
+
+#incorrectLogin {
+    color: red;
+    display: none;
+}
